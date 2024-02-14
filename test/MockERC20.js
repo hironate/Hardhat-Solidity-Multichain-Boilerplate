@@ -15,13 +15,13 @@ describe('Testing ERC20 Contract', async () => {
     return { alice, bob, maria, mockERC20 };
   };
 
-  it('should supply tokens to the Owner', async function () {
+  it('should supply tokens to the Owner', async () => {
     const { mockERC20, alice } = await loadFixture(deployContractFixtures);
 
     expect(await mockERC20.balanceOf(alice.address)).to.equal(1000000);
   });
 
-  it('should return total supply', async function () {
+  it('should return total supply', async () => {
     const { mockERC20 } = await loadFixture(deployContractFixtures);
 
     expect(await mockERC20.totalSupply()).to.equal(1000000);

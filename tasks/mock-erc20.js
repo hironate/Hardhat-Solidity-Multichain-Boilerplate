@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const { CONTRACT_NAMES } = require('../utils/constants');
 const { readContract, writeContract, writeABI } = require('../utils/io');
 

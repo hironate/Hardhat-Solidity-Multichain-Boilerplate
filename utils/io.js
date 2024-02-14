@@ -1,9 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const getNetwork = () => {
-  return process.env.DEPLOY_NETWORK || 'hardhat';
-};
+const getNetwork = () => process.env.DEPLOY_NETWORK || 'hardhat';
 
 const writeABI = (contractPath, contractFileName) => {
   try {

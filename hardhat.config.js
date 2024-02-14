@@ -2,10 +2,12 @@ require('dotenv').config();
 
 require('@nomicfoundation/hardhat-toolbox');
 require('hardhat-gas-reporter');
+require('@nomiclabs/hardhat-solhint');
 
 // import hardhat CLI tasks
 require('./tasks/mock-erc20');
 
+// eslint-disable-next-line prefer-destructuring
 const ACCOUNT_PRIVATE_KEY = process.env.ACCOUNT_PRIVATE_KEY;
 
 /** @type import('hardhat/config').HardhatUserConfig */
