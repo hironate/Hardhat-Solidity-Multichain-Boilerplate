@@ -1,4 +1,4 @@
-# hardhat-solidity-multichain-boilerplate
+# Hardhat solidity multichain boilerplate
 
 This repository is a boilerplate for smart contract development which contains Hardhat tasks for deploying, verifying, and exporting the ABI for the contract.
 
